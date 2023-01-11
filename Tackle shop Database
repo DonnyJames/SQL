@@ -1,0 +1,20 @@
+CREATE TABLE tackle(ID INTEGER PRIMARY KEY, ITEM TEXT, QUANTITY INTEGER, PRICE INTEGER, AISLE INTEGER, NEED INTEGER);
+
+INSERT INTO tackle VALUES (1, "worms", 25, 3, 1, 5);
+INSERT INTO tackle VALUES (2, "hooks", 10, 6, 2, 5);
+INSERT INTO tackle VALUES (3, "rapalas", 30, 12, 2, 20);
+INSERT INTO tackle VALUES (4, "trebble hooks", 10, 4, 2, 10);
+INSERT INTO tackle VALUES (5, "line 6lb", 4, 15, 3, 1);
+INSERT INTO tackle VALUES (6, "line 10 lb", 9, 15, 3, 1);
+INSERT INTO tackle VALUES (7, "braided line 15lb", 7, 20, 3, 3);
+INSERT INTO tackle VALUES (8, "fishing pole", 19, 59, 4, 1);
+INSERT INTO tackle VALUES (9, "reels", 5, 30, 4, 5);
+INSERT INTO tackle VALUES (10, "vests", 4, 49, 4, 4);
+INSERT INTO tackle VALUES (11, "hats", 10, 15, 5, 5);
+INSERT INTO tackle VALUES (12, "sun screen", 10, 5, 1, 5);
+INSERT INTO tackle VALUES (13, "power bait", 10, 3, 1, 10);
+INSERT INTO tackle VALUES (14, "nets", 3, 29, 4, 7);
+INSERT INTO tackle VALUES (15, "waders", 5, 69, 5, 5);
+
+SELECT * FROM tackle ORDER BY PRICE;
+SELECT SUM(PRICE) from tackle;
